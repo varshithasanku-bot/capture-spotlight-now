@@ -40,7 +40,9 @@ const Navbar = () => {
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost">Sign In</Button>
-            <Button variant="hero">Join as Photographer</Button>
+            <Button variant="hero" asChild>
+              <Link to="/photographer/login">Join as Photographer</Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
